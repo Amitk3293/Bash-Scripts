@@ -4,7 +4,7 @@ do
     ssh ubuntu@${servers} 'bash -s' <<'ENDSSH'
     # The following commands run on the remote host
     echo connecting to $(hostname)
-    locate  *log4* && dpkg
+    locate  *log4*
     dpkg -l | grep log4
     echo done for $(hostname)
 ENDSSH
